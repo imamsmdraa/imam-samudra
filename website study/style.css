@@ -1,0 +1,555 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body, html {
+    color: #ccc;
+    background-color: #121212;
+    overflow-x: hidden;
+}
+.home-website{
+    color: #A52A2A;
+    text-decoration: none;
+}
+.home-website:hover{
+    /* color: #9fd3c7; */
+    color: #ccc;
+    transition: 0.5s;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* Header Styles */
+header {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    padding: 20px 0;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    color: #9fd3c7;
+    text-decoration: none;
+}
+
+
+
+header {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+}
+/* About Sec    tion Styles */
+#about {
+    background-color: #282828;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    color: #ccc;
+}
+.navbar-home{
+    color: #A52A2A;
+    font-size: 19px;
+}
+.navbar-home:hover{
+    color: #ccc;
+}
+.about-home{
+    display: flex;
+}
+/* .about-image{
+    width: 40rem;
+    z-index:1;
+    height: 40rem;
+
+} */
+
+.profile-pic {
+    width: 100px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid #6200ea;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    display: block; 
+}
+
+#about {
+    /* Existing styles */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out; /* Smooth transition effect */
+}
+
+/* Keyframes for moving background */
+@keyframes slideRight {
+    0% {
+        background-position: 0% center;
+    }
+    100% {
+        background-position: 100% center;
+    }
+}
+
+/* Applied animation style */
+.animated-background {
+    animation: slideRight 3s ease-in-out forwards; /* Adjust time as needed */
+}
+
+
+.about-content {
+    max-width: 80%; /* Limiting text width for better readability */
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    color: #A52A2A;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+
+    width: 30rem;
+    text-align: justify;
+}
+.about-logo{
+    display: flex;
+    
+    
+    
+}
+
+.about-logo .instagram-logo{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+    
+}
+.about-logo .github-logo{
+    width: 38px;
+    height: 30px;
+    margin-right: 10px;
+}
+.about-logo .freelancer-logo{
+    width: 40px;
+    height: 30px;
+}
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+section h2{
+    justify-content: center;
+    display: flex;
+}
+/* Project Image Container Style */
+.project {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px; /* Rounded corners for aesthetic */
+}
+
+/* Project Image Style */
+.project-image {
+    width: 100%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+    display: block;
+    border-radius: 10px;
+}
+
+/* Hover Effects */
+.project:hover .project-image {
+    transform: scale(1.1); /* Slightly increase size */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* Shadow for depth */
+}
+
+/* Optional: Text overlay on hover */
+.project-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white;
+    width: 100%;
+    padding: 10px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.project:hover .project-info {
+    transform: translateY(0);
+}
+
+
+
+.my-project{
+    padding: 40px ;
+}
+.project {
+    flex-direction: column;
+    display: flex; 
+    align-items: center;
+    text-align: center;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+
+}
+
+.project-image {
+    width: 100%; /* Ensures the image takes up the entire width of the container */
+    height: auto;
+    aspect-ratio: 3 / 4; /* Adjust based on your preferred aspect ratio for portrait images */
+    object-fit: cover; /* Ensures the image covers the aspect ratio area without distortion */
+    border-radius: 10px; /* Optional: Adds rounded corners to your images */
+}
+
+
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #1e1e1e;
+    color: #300808;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #2c2c2c;
+    border: 2px solid #333333;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+/* background */
+#background {
+    background-color: #363636;  /* Dark background for contrast */
+    color: #ffffff;
+    padding: 40px 20px;
+    line-height: 1.6;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    
+    
+}
+.container-bg{
+    justify-content: center;
+    display: flex;
+    
+    
+}
+.container-bg p{
+    
+    padding-left: 1rem;
+   
+}
+#background img{
+    width: 40%;
+    height: 40%;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: image 1s ease-in-out; 
+}
+#background {
+
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    color: #ffffff; 
+    padding: 40px 20px;
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+
+
+.container-bg {
+    text-align: justify;
+    max-width: 1000px; 
+    margin: auto; 
+    padding: 20px; 
+    border-left: 4px solid #9fd3c7;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+#background img {
+    width: 40%;
+    height: 40%;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity 1s ease-in-out; /* Transisi ease-in-out */
+    opacity: 1; /* Pastikan gambar awalnya terlihat */
+}
+
+/* Menggunakan class untuk kontrol transparansi gambar saat mengganti */
+#background img.fade-out {
+    opacity: 0;
+}
+
+
+/* .ul-contact-me{
+   
+   
+} */
+.contact-me{
+    padding: 40px;
+    padding-top: 50px;
+}
+.ul-contact-me li{
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+    
+}
+.ul-contact-me li a{
+    color: #ffffff;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 1px solid white;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    margin: 8px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 50%;
+    
+}
+.ul-contact-me li a:hover{
+    transition:0.6s;
+    width: 53%;
+}
+
+.footer-get{
+    color: #FFF8DC;
+}
+/* Responsive adjustments */
+
+/* Apply a background image to the About section on laptop screens */
+
+
+/* Basic mobile adjustments */
+/* Apply a background image to the About section on laptop screens */
+@media (min-width: 1024px) {
+    #about {
+        border-radius: 10px;
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,1) 41%, rgba(0,101,231,1) 100%); /* Replace 'path_to_your_image.jpg' with your image path */
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat; 
+        
+    }
+}
+.project-image {
+    width: 100%; 
+    height: auto;
+    aspect-ratio: 3 / 4; 
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+/* Media Query for Laptops and above */
+@media (min-width: 1024px) {
+    .project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .project-image {
+        aspect-ratio: 4/8; 
+        max-height: 400px;  
+        object-fit: cover;  
+    }
+}
+
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    body, html {
+        font-size: 14px; 
+    }
+
+    .header-container {
+        flex-direction: column;
+    }
+    
+    nav ul {
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        display: block; 
+        margin: 5px 0;
+        text-align: center;
+    }
+    
+    .about-container {
+        grid-template-columns: 1fr; 
+        padding: 20px;
+    }
+    
+    .profile-pic {
+        margin: 0 auto; 
+        width: 80px; 
+        height: 80px;
+    }
+
+    .about-content, .projects-container {
+        text-align: center;
+    }
+    
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+    
+    footer {
+        font-size: 12px; 
+    }
+    
+    input, textarea {
+        font-size: 14px;
+    }
+    .projects-container {
+        grid-template-columns: 1fr; 
+    }
+    .profile-pic {
+        width: 80px;
+        margin-top: 10px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .header-container {
+        padding: 10px; /
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+    
+    .about-content p, .project {
+        font-size: 14px; 
+    }
+
+    button {
+        padding: 8px 16px; 
+    }
+    .profile-pic {
+        width: 60px; 
+        margin-top: 5px;
+    }
+}
+
+
+
+/* resoponsive mobile */
