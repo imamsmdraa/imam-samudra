@@ -1,2 +1,2 @@
-# iamsmdraa
-now I'm trying to become a full stack developer
+# PRIVASI NJIR
+KALO GW MALU TUH WKWKWKWKKW
